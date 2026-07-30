@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anwar Online Islamic Studies | Daily Tajweed Lesson - Arabic Alphabet</title>
+  <meta name="description" content="Anwar Online Islamic Studies — Daily Tajweed Lesson: Arabic Alphabet (حروفِ تہجی) and Makharij audio guide.">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Custom Styling inspired by your reference card -->
+  <style>
+    .makharij-banner-box {
+      background: #fbf9f2;
+      border: 2px solid #d4c39c;
+      border-radius: 16px;
+      padding: 30px 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      max-width: 950px;
+      margin: 0 auto;
+    }
+    .lesson-badge-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .lesson-main-title {
+      background: #0f4c3a;
+      color: #f7eedd;
+      display: inline-block;
+      padding: 8px 30px;
+      border-radius: 30px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+      border: 1px solid #d4a017;
+      box-shadow: 0 4px 10px rgba(15,76,58,0.2);
+    }
+    .lesson-sub-badge {
+      background: #d4a017;
+      color: #ffffff;
+      font-size: 0.85rem;
+      padding: 3px 15px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 8px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .alphabet-heading-area {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .alphabet-heading-area h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      color: #0f4c3a;
+      margin-bottom: 5px;
+    }
+    .arabic-sub-heading {
+      font-family: 'Amiri', serif;
+      font-size: 1.8rem;
+      color: #b8860b;
+      font-weight: 700;
+    }
+    .intro-text-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      border: 1px solid #e6dbcc;
+      border-radius: 10px;
+      padding: 15px 20px;
+      margin-bottom: 25px;
+      gap: 20px;
+      font-size: 0.95rem;
+      color: #333;
+    }
+    .intro-text-urdu {
+      text-align: right;
+      font-family: 'Amiri', serif;
+      font-size: 1.15rem;
+      line-height: 1.6;
+      flex: 1;
+    }
+    .intro-text-eng {
+      text-align: left;
+      flex: 1;
+      border-left: 2px solid #d4a017;
+      padding-left: 15px;
+      line-height: 1.5;
+    }
+    /* Table Grid Styling */
+    .arabic-table-container {
+      background: #ffffff;
+      border: 2px solid #0f4c3a;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 25px;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
+    }
+    .arabic-table-header {
+      background: #0f4c3a;
+      color: #f7eedd;
+      text-align: center;
+      padding: 10px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid #d4a017;
+    }
+    .arabic-grid-row {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      border-bottom: 1px solid #e6dbcc;
+    }
+    .arabic-grid-row:last-child {
+      border-bottom: none;
+    }
+    .makhraj-card-box {
+      background: #ffffff;
+      border-right: 1px solid #e6dbcc;
+      border-bottom: 1px solid #e6dbcc;
+      padding: 12px 5px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .makhraj-card-box:hover {
+      background: #f4ece1;
+      transform: translateY(-2px);
+    }
+    .card-arabic-letter {
+      font-family: 'Amiri', serif;
+      font-size: 1.8rem;
+      color: #0f4c3a;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .card-letter-name {
+      font-size: 0.7rem;
+      color: #666;
+      margin-top: 4px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    /* Practice Box */
+    .practice-box {
+      background: #0f4c3a;
+      color: #ffffff;
+      border-radius: 10px;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      border: 1px solid #d4a017;
+      margin-bottom: 30px;
+    }
+    .practice-box i {
+      font-size: 1.8rem;
+      color: #d4a017;
+    }
+    .practice-text h4 {
+      font-size: 1.1rem;
+      color: #d4a017;
+      margin-bottom: 2px;
+    }
+    .practice-text p {
+      font-size: 0.9rem;
+      color: #f7eedd;
+      margin: 0;
+    }
+    /* Academy Brand Footer Signature */
+    .card-academy-signature {
+      text-align: center;
+      border-top: 1px dashed #d4c39c;
+      padding-top: 15px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      color: #0f4c3a;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    @media (max-width: 768px) {
+      .arabic-grid-row {
+        grid-template-columns: repeat(5, 1fr);
+      }
+      .intro-text-row {
+        flex-direction: column;
+      }
+      .intro-text-urdu {
+        text-align: center;
+      }
+      .intro-text-eng {
+        border-left: none;
+        border-top: 2px solid #d4a017;
+        padding-left: 0;
+        padding-top: 10px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =============================== -->
+  <!-- HEADER -->
+  <!-- =============================== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+
+      <!-- Academy Logo + Name -->
+      <a href="#home" class="brand" aria-label="Anwar Online Islamic Studies — Home">
+        <img src="logo.png.jpeg" 
+             alt="Anwar Online Islamic Studies logo" 
+             class="brand-logo" 
+             width="56" 
+             height="56" 
+             style="border-radius: 50%; object-fit: cover;" 
+             onerror="this.src='https://placehold.co/96x96/f8f3e7/b8860b?text=%E2%98%AA&font=amiri'">
+        <span class="brand-name">
+          <span class="brand-name-main">Anwar</span>
+          <span class="brand-name-sub">Online Islamic Studies</span>
+        </span>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#makharij" class="nav-link">Makharij</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile menu toggle -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =============================== -->
+    <!-- HERO SECTION -->
+    <!-- =============================== -->
+    <section class="hero" id="home">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+          <h1>Illuminating Hearts Through the <span>Light of the Qur'an</span></h1>
+          <p class="hero-intro">
+            Anwar Online Islamic Studies is a premium online academy dedicated to teaching the Holy Qur'an,
+            Tajweed and correct Makharij-ul-Huroof with love, patience and precision — guiding students of
+            every age, anywhere in the world, toward confident and beautiful recitation.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Book a Free Trial Class</a>
+            <a href="#makharij" class="btn btn-ghost">Explore the Makharij</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="banner.png.jpeg" alt="Banner" class="hero-img" style="width:430px; height:315px; object-fit:cover; border-radius:12px; border:4px solid #d4a017;">
+          <div class="hero-badge">
+            <span class="hero-badge-number">29</span>
+            <span class="hero-badge-label">Arabic Letters<br>Audio Makharij Guide</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================== -->
+    <!-- ABOUT SECTION -->
+    <!-- =============================== -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">About Our Academy</p>
+          <h2>A Trusted Home for Qur'an &amp; Tajweed Learning</h2>
+          <p class="section-lead">
+            Anwar Online Islamic Studies brings together qualified, experienced teachers and a warm, student-friendly
+            learning environment — helping students of all ages recite the Qur'an with confidence, correct pronunciation
+            and a deep connection to its meaning, entirely from the comfort of home.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card">
+            <div class="about-icon" aria-hidden="true">📖</div>
+            <h3>Qur'an Teaching</h3>
+            <p>Structured Qur'an reading and memorization (Hifz) classes for beginners, children and adults, taught one-on-one or in small groups.</p>
+          </article>
+
+          <article class="about-card">
+            <div class="about-icon" aria-hidden="true">🎙️</div>
+            <h3>Tajweed Classes</h3>
+            <p>Step-by-step Tajweed rules taught with clarity — from Makharij-ul-Huroof to Ahkam-ul-Huroof — so every letter is pronounced correctly.</p>
+          </article>
+
+          <article class="about-card">
+            <div class="about-icon" aria-hidden="true">💻</div>
+            <h3>Online Learning</h3>
+            <p>Flexible live online classes accessible from anywhere in the world, with recorded sessions and progress tracking for every student.</p>
+          </article>
+
+          <article class="about-card">
+            <div class="about-icon" aria-hidden="true">🌙</div>
+            <h3>Experienced Teachers</h3>
+            <p>Our male and female tutors are Ijazah-holders and trained instructors with years of experience teaching students of all levels.</p>
+          </article>
+
+          <article class="about-card">
+            <div class="about-icon" aria-hidden="true">🤝</div>
+            <h3>Student-Friendly Learning</h3>
+            <p>Patient, encouraging teaching tailored to each student's pace, with flexible scheduling for families across different time zones.</p>
+          </article>
+
+          <article class="about-card about-card-contact">
+            <div class="about-icon" aria-hidden="true">✉️</div>
+            <h3>Contact Information</h3>
+            <p>
+              WhatsApp: +92 313 6758675<br>
+              Email: anwaronlineislamicstudies@gmail.com<br>
+              Classes available 7 days a week
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================== -->
+    <!-- MAKHARIJ SECTION (EXACT DESIGN MATCH) -->
+    <!-- =============================== -->
+    <section class="makharij" id="makharij">
+      <div class="container">
+        
+        <div class="makharij-banner-box">
+          <!-- Lesson Top Badge -->
+          <div class="lesson-badge-container">
+            <span class="lesson-sub-badge">Lesson 1</span><br>
+            <span class="lesson-main-title">Daily Tajweed Lesson</span>
+          </div>
+
+          <!-- Main Arabic Alphabet Heading -->
+          <div class="alphabet-heading-area">
+            <h2>Arabic Alphabet</h2>
+            <div class="arabic-sub-heading">حروفِ تہجی</div>
+          </div>
+
+          <!-- Description Box (Urdu & English) -->
+          <div class="intro-text-row">
+            <div class="intro-text-urdu">
+              عربی زبان میں 29 حروف ہیں۔ ہر حرف کی اپنی ادا کرنے کی جگہ (مخرج) ہوتی ہے۔
+            </div>
+            <div class="intro-text-eng">
+              The Arabic language has 29 letters. Each letter has its own <strong>Makhraj</strong> (point of articulation) from which it is pronounced.
+            </div>
+          </div>
+
+          <!-- 29 Letters Structured Table Grid with Audio Playback -->
+          <div class="arabic-table-container">
+            <div class="arabic-table-header">Arabic Alphabet (29 Letters) — Click any letter to listen</div>
+            
+            <!-- Row 1 -->
+            <div class="arabic-grid-row">
+              <div class="makhraj-card-box" onclick="playLetterAudio('alif')">
+                <span class="card-arabic-letter">ا</span>
+                <span class="card-letter-name">Alif</span>
+                <audio id="audio-alif" src="Letter_Alif_To_Ya/alif.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('baa')">
+                <span class="card-arabic-letter">ب</span>
+                <span class="card-letter-name">Ba</span>
+                <audio id="audio-baa" src="Letter_Alif_To_Ya/baa.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('taa')">
+                <span class="card-arabic-letter">ت</span>
+                <span class="card-letter-name">Ta</span>
+                <audio id="audio-taa" src="Letter_Alif_To_Ya/taa.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('thaa')">
+                <span class="card-arabic-letter">ث</span>
+                <span class="card-letter-name">Tha</span>
+                <audio id="audio-thaa" src="Letter_Alif_To_Ya/thaa.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('jeem')">
+                <span class="card-arabic-letter">ج</span>
+                <span class="card-letter-name">Jeem</span>
+                <audio id="audio-jeem" src="Letter_Alif_To_Ya/jeem.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('haa')">
+                <span class="card-arabic-letter">ح</span>
+                <span class="card-letter-name">Ha</span>
+                <audio id="audio-haa" src="Letter_Alif_To_Ya/haa.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('khaa')">
+                <span class="card-arabic-letter">خ</span>
+                <span class="card-letter-name">Kha</span>
+                <audio id="audio-khaa" src="Letter_Alif_To_Ya/khaa.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('daal')">
+                <span class="card-arabic-letter">د</span>
+                <span class="card-letter-name">Dal</span>
+                <audio id="audio-daal" src="Letter_Alif_To_Ya/daal.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('zhaal')">
+                <span class="card-arabic-letter">ذ</span>
+                <span class="card-letter-name">Dhal</span>
+                <audio id="audio-zhaal" src="Letter_Alif_To_Ya/zhaal.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('raa')">
+                <span class="card-arabic-letter">ر</span>
+                <span class="card-letter-name">Ra</span>
+                <audio id="audio-raa" src="Letter_Alif_To_Ya/raa.mp3"></audio>
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="arabic-grid-row">
+              <div class="makhraj-card-box" onclick="playLetterAudio('zaa')">
+                <span class="card-arabic-letter">ز</span>
+                <span class="card-letter-name">Zay</span>
+                <audio id="audio-zaa" src="Letter_Alif_To_Ya/zaa.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('seen')">
+                <span class="card-arabic-letter">س</span>
+                <span class="card-letter-name">Seen</span>
+                <audio id="audio-seen" src="Letter_Alif_To_Ya/seen.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('sheen')">
+                <span class="card-arabic-letter">ش</span>
+                <span class="card-letter-name">Sheen</span>
+                <audio id="audio-sheen" src="Letter_Alif_To_Ya/sheen.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('saad')">
+                <span class="card-arabic-letter">ص</span>
+                <span class="card-letter-name">Sad</span>
+                <audio id="audio-saad" src="Letter_Alif_To_Ya/saad.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('dhaad')">
+                <span class="card-arabic-letter">ض</span>
+                <span class="card-letter-name">Dad</span>
+                <audio id="audio-dhaad" src="Letter_Alif_To_Ya/dhaad.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('toa')">
+                <span class="card-arabic-letter">ط</span>
+                <span class="card-letter-name">Ta (H)</span>
+                <audio id="audio-toa" src="Letter_Alif_To_Ya/toa.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('zhoa')">
+                <span class="card-arabic-letter">ظ</span>
+                <span class="card-letter-name">Za</span>
+                <audio id="audio-zhoa" src="Letter_Alif_To_Ya/zhoa.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('ain')">
+                <span class="card-arabic-letter">ع</span>
+                <span class="card-letter-name">Ayn</span>
+                <audio id="audio-ain" src="Letter_Alif_To_Ya/ain.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('ghain')">
+                <span class="card-arabic-letter">غ</span>
+                <span class="card-letter-name">Ghayn</span>
+                <audio id="audio-ghain" src="Letter_Alif_To_Ya/ghain.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('faa')">
+                <span class="card-arabic-letter">ف</span>
+                <span class="card-letter-name">Fa</span>
+                <audio id="audio-faa" src="Letter_Alif_To_Ya/faa.mp3"></audio>
+              </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="arabic-grid-row">
+              <div class="makhraj-card-box" onclick="playLetterAudio('qaaf')">
+                <span class="card-arabic-letter">ق</span>
+                <span class="card-letter-name">Qaf</span>
+                <audio id="audio-qaaf" src="Letter_Alif_To_Ya/qaaf.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('kaaf')">
+                <span class="card-arabic-letter">ك</span>
+                <span class="card-letter-name">Kaf</span>
+                <audio id="audio-kaaf" src="Letter_Alif_To_Ya/kaaf.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('laam')">
+                <span class="card-arabic-letter">ل</span>
+                <span class="card-letter-name">Lam</span>
+                <audio id="audio-laam" src="Letter_Alif_To_Ya/laam.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('meem')">
+                <span class="card-arabic-letter">م</span>
+                <span class="card-letter-name">Meem</span>
+                <audio id="audio-meem" src="Letter_Alif_To_Ya/meem.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('noon')">
+                <span class="card-arabic-letter">ن</span>
+                <span class="card-letter-name">Noon</span>
+                <audio id="audio-noon" src="Letter_Alif_To_Ya/noon.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('haa2')">
+                <span class="card-arabic-letter">هـ</span>
+                <span class="card-letter-name">Ha (L)</span>
+                <audio id="audio-haa2" src="Letter_Alif_To_Ya/haa2.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('waw')">
+                <span class="card-arabic-letter">و</span>
+                <span class="card-letter-name">Waw</span>
+                <audio id="audio-waw" src="Letter_Alif_To_Ya/waw.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('hamzah')">
+                <span class="card-arabic-letter">ء</span>
+                <span class="card-letter-name">Hamzah</span>
+                <audio id="audio-hamzah" src="Letter_Alif_To_Ya/hamzah.mp3"></audio>
+              </div>
+              <div class="makhraj-card-box" onclick="playLetterAudio('yaa')">
+                <span class="card-arabic-letter">ي</span>
+                <span class="card-letter-name">Ya</span>
+                <audio id="audio-yaa" src="Letter_Alif_To_Ya/yaa.mp3"></audio>
+              </div>
+              <!-- Empty placeholder cell to complete grid look -->
+              <div class="makhraj-card-box" style="background: #faf8f5; cursor: default;">
+                <span class="card-arabic-letter" style="color: #ccc;">✦</span>
+                <span class="card-letter-name">Tajweed</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Practice Box -->
+          <div class="practice-box">
+            <i class="fa-solid fa-clipboard-list"></i>
+            <div class="practice-text">
+              <h4>Practice:</h4>
+              <p>Read all 29 letters three times with correct Makharij.</p>
+            </div>
+          </div>
+
+          <!-- Academy Signature Footer -->
+          <div class="card-academy-signature">
+            Anwar Online Islamic Studies
+          </div>
+        </div>
+
+        <script>
+          function playLetterAudio(letterId) {
+            document.querySelectorAll('audio').forEach(audio => {
+              audio.pause();
+              audio.currentTime = 0;
+            });
+            const selectedAudio = document.getElementById('audio-' + letterId);
+            if (selectedAudio) {
+              selectedAudio.play().catch(e => console.log("Audio play blocked or missing file:", e));
+            }
+          }
+        </script>
+
+      </div>
+    </section>
+
+    <!-- =============================== -->
+    <!-- CONTACT / CTA SECTION -->
+    <!-- =============================== -->
+    <section class="contact" id="contact">
+      <div class="container contact-inner">
+        <div class="contact-text">
+          <p class="eyebrow">Get in Touch</p>
+          <h2>Begin Your Qur'an Journey Today</h2>
+          <p>Reach out to schedule your free trial class. Our team will help you find the right teacher and class time for you or your child.</p>
+          <ul class="contact-list">
+            <li><strong>WhatsApp:</strong> +92 313 6758675</li>
+            <li><strong>Email:</strong> anwaronlineislamicstudies@gmail.com</li>
+            <li><strong>Hours:</strong> 7 days a week, flexible time zones</li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us what you'd like to learn..." required></textarea>
+
+          <button type="submit" class="btn btn-primary btn-block">Request Free Trial</button>
+          <p class="form-note" id="form-note" hidden>Jazak Allahu Khairan! Your message has been noted — we will contact you soon.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- =============================== -->
+  <!-- FOOTER -->
+  <!-- =============================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="logo.png.jpeg" alt="Anwar Online Islamic Studies logo" width="48" height="48" style="border-radius: 50%; object-fit: cover;">
+        <div>
+          <p class="footer-name">Anwar Online Islamic Studies</p>
+          <p class="footer-tagline">Illuminating hearts through the light of the Qur'an</p>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#makharij">Makharij</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <div class="social-icons">
+          <a href="https://wa.me/923136758675" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="tel:03000272348" aria-label="Call">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <a href="mailto:anwaronlineislamicstudies@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
